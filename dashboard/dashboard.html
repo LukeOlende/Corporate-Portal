@@ -13,20 +13,25 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="/img/little_corp_logo.png" alt="Little Logo" width="75" height="35" class="d-inline-block align-text-bottom my-1">
-        <span class="fs-4">CORPORATE</span>
+      <!-- Offcanvas Trigger -->
+      <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample"></span>
+      </button>
+      <!-- Offcanvas Trigger -->
+      <a class="navbar-brand me-auto" href="#">
+        <img src="/img/little.png" alt="Little Logo" width="35" class="d-inline-block align-text-top">
+        <span class="fw-bold text-capitalize">Little Corporate</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                   <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                   <span>John Doe</span>
@@ -47,35 +52,71 @@
   <!-- Navbar -->
 
   <!-- Offcanvas -->
-  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-    Link with href
-  </a>
-  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-    Button with data-bs-target
-  </button>
-  
-  <div class="offcanvas offcanvas-start sidebar-nav" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div>
-        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-      </div>
-      <div class="dropdown mt-3">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+  <div class="offcanvas offcanvas-start sidebar-nav bg-light text-dark" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body p-0">
+      <nav class="navbar-dark">
+        <ul class="navbar-nav">
+          <li>
+            <a href="" class="nav-link text-dark px-3 active mb-2 mt-2">
+              <span class="me-2"><i class="bi bi-columns-gap" style="color:#0275d8; font-size: larger;"></i></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-link text-dark px-3 mb-2">
+              <span class="me-2"><i class="bi bi-diagram-3-fill" style="color:#0275d8; font-size: larger;"></i></span>
+              <span>Departments</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-link text-dark px-3 mb-2">
+              <span class="me-2"><i class="bi bi-person-workspace" style="color:#0275d8; font-size: larger;"></i></span>
+              <span>Administrators</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-link text-dark px-3 mb-2">
+              <span class="me-2"><i class="bi bi-people-fill" style="color:#0275d8; font-size: larger;"></i></span>
+              <span>All Staff</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-link text-dark px-3 mb-2">
+              <span class="me-2"><i class="bi bi-car-front" style="color:#0275d8; font-size: larger;"></i></span>
+              <span>Trips</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-link text-dark px-3 mb-2">
+              <span class="me-2"><i class="bi bi-cash-coin" style="color:#0275d8; font-size: larger;"></i></span>
+              <span>Budgets & Insurance</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-link text-dark px-3 mb-2">
+              <span class="me-2"><i class="bi bi-bus-front" style="color:#0275d8; font-size: larger;"></i></span>
+              <span>Shuttle</span>
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-link text-dark px-3 mb-2">
+              <span class="me-2"><i class="bi bi-files" style="color:#0275d8; font-size: larger;"></i></span>
+              <span>Documents</span>
+            </a>
+          </li>
         </ul>
-      </div>
+      </nav>
     </div>
   </div>
   <!-- Offcanvas -->
+
+  <!-- Main Content -->
+  <main class="mt-5 pt-3">
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel eros ut lacus fermentum cursus ut quis massa. Phasellus et pellentesque ante. Morbi vitae varius nisl. Nam rhoncus imperdiet iaculis.
+    </div>
+  </main>
+  <!-- Main Content -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
