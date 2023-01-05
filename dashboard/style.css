@@ -10,7 +10,7 @@ button {
 .sidebar-nav {
   width: var(--offcanvas-width);
 }
-@media (min-width:992px) {
+@media (min-width:990px) {
   body {
     overflow: auto !important;
   }
