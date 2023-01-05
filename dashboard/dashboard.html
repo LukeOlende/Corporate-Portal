@@ -58,49 +58,49 @@
       <nav class="navbar-dark">
         <ul class="navbar-nav">
           <li>
-            <a href="" class="nav-link text-dark fs-5 px-3 active w3-blue mb-1 mt-1">
+            <a href="" class="nav-link border text-dark fs-5 px-3 active w3-blue mb-1 mt-1">
               <span class="me-2"><i class="bi bi-columns-gap"></i></span>
               <span>Dashboard</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link text-dark w3-hover-blue fs-5 px-3 mb-1">
+            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
               <span class="me-2"><i class="bi bi-diagram-3-fill"></i></span>
               <span>Departments</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link text-dark w3-hover-blue fs-5 px-3 mb-1">
+            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
               <span class="me-2"><i class="bi bi-person-workspace"></i></span>
               <span>Administrators</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link text-dark w3-hover-blue fs-5 px-3 mb-1">
+            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
               <span class="me-2"><i class="bi bi-people-fill"></i></span>
               <span>All Staff</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link text-dark w3-hover-blue fs-5 px-3 mb-1">
+            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
               <span class="me-2"><i class="bi bi-car-front"></i></span>
               <span>Trips</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link text-dark w3-hover-blue fs-5 px-3 mb-1">
+            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
               <span class="me-2"><i class="bi bi-cash-coin"></i></span>
               <span>Budgets & Insurance</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link text-dark w3-hover-blue fs-5 px-3 mb-1">
+            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
               <span class="me-2"><i class="bi bi-bus-front"></i></span>
               <span>Shuttle</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link text-dark w3-hover-blue fs-5 px-3 mb-1">
+            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
               <span class="me-2"><i class="bi bi-files"></i></span>
               <span>Documents</span>
             </a>
@@ -120,14 +120,56 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 mt-3">
-          <div class="card h-100">
-            <div class="card-header">
-              <span class="me-2"><i class="bi bi-graph-up"></i></span>
-              Line Chart
+        <div class="col-md-3 mb-3">
+          <div class="card bg-info text-dark h-100">
+            <div class="card-body py-5">Primary Card</div>
+            <div class="card-footer d-flex">
+              View Details
+              <span class="ms-auto">
+                <i class="bi bi-chevron-right"></i>
+              </span>
             </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card bg-danger text-white h-100">
+            <div class="card-body py-5">Secondary Card</div>
+            <div class="card-footer d-flex">
+              View Details
+              <span class="ms-auto">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card bg-success text-white h-100">
+            <div class="card-body py-5">Success Card</div>
+            <div class="card-footer d-flex">
+              View Details
+              <span class="ms-auto">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card bg-warning text-dark h-100">
+            <div class="card-body py-5">Warning Card</div>
+            <div class="card-footer d-flex">
+              View Details
+              <span class="ms-auto">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mt-3">
+          <div class="card border border-dark h-100" >
             <div class="card-body">
-              <canvas class="chart" id="chart" width="400" height="200"></canvas>
+              <canvas class="chart" id="chart"></canvas>
             </div>
           </div>
         </div>
