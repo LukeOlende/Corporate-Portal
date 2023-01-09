@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/img/little.png"/>
   <title>Little Corporate Dashboard</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,14 +17,14 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <!-- Offcanvas Trigger -->
+      
       <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         <span class="navbar-toggler-icon" data-bs-target="#offcanvasExample"></span>
       </button>
-      <!-- Offcanvas Trigger -->
+      
       <a class="navbar-brand me-auto" href="#">
         <img src="/img/little_corp_logo.png" alt="Little Logo" width="70" class="d-inline-block align-text-bottom my-1">
-        <span class="fw-bold fs-4 text-uppercase">Corporate</span>
+        <span class="text-uppercase" style="font-size: larger; font-weight: 500;">Corporate</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,18 +33,14 @@
         <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
           <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="45" height="35" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                  <span>John Doe</span>
-              </svg>
+              <img src="/img/avatar.png" class="avatar img-fluid rounded me-1" width="35" alt="User Avatar" />
+              <span>John Doe</span>
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item w3-hover-cyan" href="#"><i class="bi bi-person"></i> My Profile</a></li>
               <li><a class="dropdown-item w3-hover-cyan" href="#"><i class="bi bi-gear"></i> Settings</a></li>
-              <li><a href="#" class="dropdown-item w3-hover-cyan"><i class="bi bi-activity"></i> Activity</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item text-danger w3-hover-red" href="#"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
+              <li><a class="dropdown-item text-danger w3-hover-red" href="#"><i class="bi bi-power"></i> Logout</a></li>
             </ul>
           </li>
         </ul>
@@ -58,49 +55,49 @@
       <nav class="navbar-dark">
         <ul class="navbar-nav">
           <li>
-            <a href="" class="nav-link border text-dark fs-5 px-3 active w3-blue mb-1 mt-1">
-              <span class="me-2"><i class="bi bi-columns-gap"></i></span>
-              <span>Dashboard</span>
+            <a href="" class="nav-link text-dark active w3-blue mb-1 px-3">
+              <span class="me-2"><i class="bi bi-house-door"></i></span>
+              <span>Home</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
-              <span class="me-2"><i class="bi bi-diagram-3-fill"></i></span>
+            <a href="" class="nav-link text-dark w3-hover-blue mb-1 px-3">
+              <span class="me-2"><i class="bi bi-columns"></i></span>
               <span>Departments</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
+            <a href="" class="nav-link text-dark w3-hover-blue mb-1 px-3">
               <span class="me-2"><i class="bi bi-person-workspace"></i></span>
               <span>Administrators</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
+            <a href="" class="nav-link text-dark w3-hover-blue mb-1 px-3">
               <span class="me-2"><i class="bi bi-people-fill"></i></span>
               <span>All Staff</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
+            <a href="" class="nav-link text-dark w3-hover-blue mb-1 px-3">
               <span class="me-2"><i class="bi bi-car-front"></i></span>
               <span>Trips</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
-              <span class="me-2"><i class="bi bi-cash-coin"></i></span>
-              <span>Budgets & Insurance</span>
+            <a href="" class="nav-link text-dark w3-hover-blue mb-1 px-3">
+              <span class="me-2"><i class="bi bi-wallet2"></i></span>
+              <span class="text-nowrap">Budgets & Insurance</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
+            <a href="" class="nav-link text-dark w3-hover-blue mb-1 px-3">
               <span class="me-2"><i class="bi bi-bus-front"></i></span>
               <span>Shuttle</span>
             </a>
           </li>
           <li>
-            <a href="" class="nav-link border text-dark w3-hover-blue fs-5 px-3 mb-1">
+            <a href="" class="nav-link text-dark w3-hover-blue mb-1 px-3">
               <span class="me-2"><i class="bi bi-files"></i></span>
               <span>Documents</span>
             </a>
@@ -112,64 +109,86 @@
   <!-- Offcanvas -->
 
   <!-- Main Content -->
-  <main class="mt-5 pt-3">
+  <main class="mt-5 p-4">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 text-primary mt-3 mb-3 fs-3" style="font-weight: 500;">
-          Welcome back!
+        <div class="col-md-12 text-primary mt-3 mb-3 fs-3" style="font-weight: 600;">
+          Dashboard
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3 mb-3">
-          <div class="card bg-info text-dark h-100">
-            <div class="card-body py-5">Primary Card</div>
-            <div class="card-footer d-flex">
-              View Details
-              <span class="ms-auto">
-                <i class="bi bi-chevron-right"></i>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card bg-danger text-white h-100">
-            <div class="card-body py-5">Secondary Card</div>
-            <div class="card-footer d-flex">
-              View Details
-              <span class="ms-auto">
-                <i class="bi bi-chevron-right"></i>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card bg-success text-white h-100">
-            <div class="card-body py-5">Success Card</div>
-            <div class="card-footer d-flex">
-              View Details
-              <span class="ms-auto">
-                <i class="bi bi-chevron-right"></i>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-3">
-          <div class="card bg-warning text-dark h-100">
-            <div class="card-body py-5">Warning Card</div>
-            <div class="card-footer d-flex">
-              View Details
-              <span class="ms-auto">
-                <i class="bi bi-chevron-right"></i>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8 mt-3">
-          <div class="card border border-dark h-100" >
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
             <div class="card-body">
-              <canvas class="chart" id="chart"></canvas>
+              <div class="row">
+                <div class="col mt-0">
+                  <h5 class="fw-bold text-muted">Sales</h5>
+                </div>
+                <div class="col-auto">
+                  <div class="stat text-primary">
+                    <i class="align-middle fs-3 bi bi-truck"></i>
+                  </div>
+                </div>
+              </div>
+              <h1 class="mt-1 mb-3">1456</h1>
+              <div class="mb-0">
+                <span class="text-danger">-3.65%</span>
+                <span class="text-muted">Since last month</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="row">
+                <div class="col mt-0">
+                  <h5 class="text-muted fw-bold">Revenue</h5>
+                </div>
+                <div class="col-auto">
+                  <div class="stat text-primary">
+                    <i class="align-middle fs-3 bi bi-cash-coin"></i>
+                  </div>
+                </div>
+              </div>
+              <h1 class="mt-1 mb-3">$150k</h1>
+              <div class="mb-0">
+                <span class="text-success">8.65%</span>
+                <span class="text-muted">Since last month</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="row">
+                <div class="col mt-0">
+                  <h5 class="text-muted fw-bold">Visitors</h5>
+                </div>
+                <div class="col-auto">
+                  <div class="stat text-primary">
+                    <i class="align-middle fs-3 bi bi-people"></i>
+                  </div>
+                </div>
+              </div>
+              <h1 class="mt-1 mb-3">1756</h1>
+              <div class="mb-0">
+                <span class="text-danger">-4.65%</span>
+                <span class="text-muted">Since last month</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 mb-3">
+          <div class="card h-100" >
+            <div class="card-body">
+              <div id="chart">
+
+              </div>
+              <!-- <canvas class="chart" id="chart"></canvas> -->
             </div>
           </div>
         </div>
@@ -179,6 +198,7 @@
   <!-- Main Content -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="/dashboard/js/jquery-3.5.1.js"></script>
   <script src="/dashboard/js/jquery.dataTables.min.js"></script>

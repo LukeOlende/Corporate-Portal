@@ -5,10 +5,14 @@ button {
 }
 :root {
   --offcanvas-width: 250px;
-  --topNavbarHeight: 65px;
+  --topNavbarHeight: 66px;
 }
 .sidebar-nav {
   width: var(--offcanvas-width);
+}
+#chart{
+  max-width: 600px;
+  margin: 35px auto;
 }
 @media (min-width:990px) {
   body {
